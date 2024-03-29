@@ -219,7 +219,7 @@ max-width: 100%; /* Make the image responsive and ensure it fits within the box 
 		<p>Prediction Price:</strong> {{ "%.2f"|format(ARIMA_prediction) }}</p>
 		<p>RMSE:</strong> {{ "%.2f"|format(ARIMA_rmse) }}</p>
 		<p>MAE:</strong> {{ "%.2f"|format(ARIMA_mae) }}</p>
-		<p>MAPE:</strong> {{ "%.2f"|format(ARIMA_mape) }}</p>
+		<p>MAPE:</strong> {{ "%.2f%%"|format(ARIMA_mape) }}</p>
 		<p>ARIMA Best Order:</strong> {{ ARIMA_best_order }}</p>
         <div class="model-image-box">
             <img src="{{ url_for('static', filename='images/ARIMA_' ~ stock ~ '_PNG.png') }}" alt="ARIMA {{ stock }} Prediction">
